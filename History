@@ -1,0 +1,67 @@
+Changes from pGraph 2.4 to pGraph 2.5
+10 Jun 2016
+Added multiple pages support.
+Fixed error in CPI when LPAR is powered off (division by zero)
+
+17 Dic 2015
+Fixed wrong key update in NmonTokenizer for TOP lines
+
+15 Oct 2015
+Added page faults from NMON
+
+25 Sept 2015
+Fix on nmon tokenizer: check if network tokens change, allow ,, to b treated as , for Linux data
+
+25 Aug 2015
+New nmon parser with tonenizer. It makes parsing more reliable and eases the addition of new data
+
+24 Aug 2015
+MEM issue on some AIX versions. A fiels is sometimes present and wrongly triggered AME parsing.
+
+13 May 2015
+Added FCxxxx check if labels were present. Improved JFS change logging.
+
+04 May 2015
+Modified sanity check on NMON to cope with systems bigger than 64 cores
+
+19 Nov 2014
+Added CPI from lslparutil
+
+19 Sept 2014
+Moved folded VPs on a dedicated panel
+
+27 Aug 2014
+Stop reading disk data when new disks are added.
+
+31 Oct 2013
+Added parsing of lssrad data within nmon. No viewing...
+
+19 Oct 2013
+Fixed CPU graph scale to 100%. Previously wrong grid values were shown.
+
+18 Mar 2013
+Added Global VP numbers
+
+29 Mar 2013
+Fixed problem in batch graph generation on "selected graphs". Just a workaround.
+
+02 Apr 2013
+Added runq and swapq metrics for sar
+
+03 Apr 2013
+Fast check on parser type: nmon, vmstat. topas, iostat, lslparutil
+
+24 Apr 2013
+Skipping disk data when more than 100 disks. Use button to enable data parsing.
+
+29 Apr 2013
+Added "Same max value" button in frames
+
+15 May 2013
+Added MaxTopProcs and MaxDisks property value
+
+30 May 2013
+Skipping JFS data when number of filesystems changes
+
+10 July 2013
+Fixed proc used based on pc > or < ent
